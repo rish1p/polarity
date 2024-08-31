@@ -36,7 +36,7 @@ def wait_for_run_completion(client, thread_id, run_id, sleep_interval=5):
 def text_to_latex(text):
     message = text
     # Define your OpenAI API key directly
-    api_key = "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"
+    api_key = "___"
 
     # Create an OpenAI client with the API key
     client = OpenAI(api_key=api_key)
@@ -58,7 +58,7 @@ def text_to_latex(text):
 
 def speech_to_text(filepath):
     url = "https://api.monsterapi.ai/v1/generate/whisper"
-    API_Key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IjNjYTllMjRhZGViMjE0ZGRkOTYyODU4NTM1ZjFhYjk5IiwiY3JlYXRlZF9hdCI6IjIwMjQtMDItMThUMDU6MzQ6MjkuMDA2NDI2In0.9nLgjWEAv0rfmEB83vuO0BgKKehVerUCe07mUoZJnts"
+    API_Key = "___"
     payload = {"diarize": "true", "language": "en"}
 
     file_name = os.path.basename(filepath)
@@ -78,7 +78,7 @@ def speech_to_text(filepath):
 
     headers = {
         "accept": "application/json",
-        "authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IjNjYTllMjRhZGViMjE0ZGRkOTYyODU4NTM1ZjFhYjk5IiwiY3JlYXRlZF9hdCI6IjIwMjQtMDItMThUMDU6MzQ6MjkuMDA2NDI2In0.9nLgjWEAv0rfmEB83vuO0BgKKehVerUCe07mUoZJnts"
+        "authorization": "Bearer ___"
     }
 
     status = "IN_PROGRESS"
